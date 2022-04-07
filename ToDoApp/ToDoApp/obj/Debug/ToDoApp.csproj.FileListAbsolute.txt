@@ -1,0 +1,15 @@
+C:\Viatkin\Pet1\ToDoApp\ToDoApp\bin\Debug\ToDoApp.exe.config
+C:\Viatkin\Pet1\ToDoApp\ToDoApp\bin\Debug\ToDoApp.exe
+C:\Viatkin\Pet1\ToDoApp\ToDoApp\bin\Debug\ToDoApp.pdb
+C:\Viatkin\Pet1\ToDoApp\ToDoApp\obj\Debug\ToDoApp.csproj.AssemblyReference.cache
+C:\Viatkin\Pet1\ToDoApp\ToDoApp\obj\Debug\MainWindow.g.cs
+C:\Viatkin\Pet1\ToDoApp\ToDoApp\obj\Debug\App.g.cs
+C:\Viatkin\Pet1\ToDoApp\ToDoApp\obj\Debug\ToDoApp_MarkupCompile.cache
+C:\Viatkin\Pet1\ToDoApp\ToDoApp\obj\Debug\ToDoApp_MarkupCompile.lref
+C:\Viatkin\Pet1\ToDoApp\ToDoApp\obj\Debug\MainWindow.baml
+C:\Viatkin\Pet1\ToDoApp\ToDoApp\obj\Debug\ToDoApp.g.resources
+C:\Viatkin\Pet1\ToDoApp\ToDoApp\obj\Debug\ToDoApp.Properties.Resources.resources
+C:\Viatkin\Pet1\ToDoApp\ToDoApp\obj\Debug\ToDoApp.csproj.GenerateResource.cache
+C:\Viatkin\Pet1\ToDoApp\ToDoApp\obj\Debug\ToDoApp.csproj.CoreCompileInputs.cache
+C:\Viatkin\Pet1\ToDoApp\ToDoApp\obj\Debug\ToDoApp.exe
+C:\Viatkin\Pet1\ToDoApp\ToDoApp\obj\Debug\ToDoApp.pdb
