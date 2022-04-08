@@ -14,6 +14,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 using ToDoApp.Models;
+using ToDoApp.Services;
 
 namespace ToDoApp
 {
@@ -22,28 +23,49 @@ namespace ToDoApp
     /// </summary>
     public partial class MainWindow : Window
     {
+        private readonly string PATH = $"{Environment.CurrentDirectory}\\todoDataList.json";
         private BindingList<ToDoModel> _todoDataList;
-        public MainWindow()
+        private FileIOService _fileIOService;
+
+        public MainWindow()                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 
         {
             InitializeComponent();
         }
 
         private void Window_Loaded(object sender, RoutedEventArgs e)
         {
-            _todoDataList = new BindingList<ToDoModel>()
+            _fileIOService = new FileIOService(PATH);
+
+            try
             {
-                new ToDoModel(){Text="test"},
-                new ToDoModel(){ Text="Test2"}
-            };
+                _todoDataList = _fileIOService.LoadData();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+                Close();
+
+            }
 
             dgToDoList.ItemsSource = _todoDataList;
-            _todoDataList.ListChanged += TodoDataList_ListChanged;
+
+            _todoDataList.ListChanged += _todoDataList_ListChanged;
         }
 
-        private void TodoDataList_ListChanged(object sender, ListChangedEventArgs e)
+        private void _todoDataList_ListChanged(object sender, ListChangedEventArgs e)
         {
             if (e.ListChangedType == ListChangedType.ItemAdded || e.ListChangedType == ListChangedType.ItemChanged || e.ListChangedType == ListChangedType.ItemDeleted)
             {
+                try
+                {
+                    _fileIOService.SaveData(sender);
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show(ex.Message);
+                    Close();
+
+                }
 
             }
 
