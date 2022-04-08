@@ -13,3 +13,6 @@ C:\Viatkin\Pet1\ToDoApp\ToDoApp\obj\Debug\ToDoApp.csproj.GenerateResource.cache
 C:\Viatkin\Pet1\ToDoApp\ToDoApp\obj\Debug\ToDoApp.csproj.CoreCompileInputs.cache
 C:\Viatkin\Pet1\ToDoApp\ToDoApp\obj\Debug\ToDoApp.exe
 C:\Viatkin\Pet1\ToDoApp\ToDoApp\obj\Debug\ToDoApp.pdb
+C:\Viatkin\Pet1\ToDoApp\ToDoApp\bin\Debug\Newtonsoft.Json.dll
+C:\Viatkin\Pet1\ToDoApp\ToDoApp\bin\Debug\Newtonsoft.Json.xml
+C:\Viatkin\Pet1\ToDoApp\ToDoApp\obj\Debug\ToDoApp.csproj.CopyComplete
