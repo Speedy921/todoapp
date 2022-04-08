@@ -1,12 +1,13 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
 namespace ToDoApp.Models
 {
-    class ToDoModel
+    class ToDoModel: INotifyPropertyChanged
     {
         private bool _IsDone;
         private string _Text;
@@ -15,15 +16,33 @@ namespace ToDoApp.Models
         public bool IsDone
         {
             get { return _IsDone; }
-            set { _IsDone = value; }
-        }     
+            set
+            {
+                if (_IsDone == value)
+                    return;
+                _IsDone = value;
+                OnPropertyChanged("IsDone");
+             }
+
+        }
 
         public string Text
         {
             get { return _Text; }
-            set { _Text = value; }
+            set
+            {
+                if (_Text == value)
+                    return;
+                _Text = value;
+                OnPropertyChanged("Text");
+            }
         }
 
+        public event PropertyChangedEventHandler PropertyChanged;
 
+        protected virtual void OnPropertyChanged(string propertyName = "")
+        {
+            PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
+        }
     }
 }
