@@ -29,7 +29,7 @@ namespace ToDoApp.Services
             }
             using (var reader = File.OpenText(PATH))
             {
-                var fileTExt = reader.ReadToEnd();
+                var fileText = reader.ReadToEnd();
                 return JsonConvert.DeserializeObject<BindingList<ToDoModel>>(fileText);
             }
         }

@@ -49,10 +49,10 @@ namespace ToDoApp
 
             dgToDoList.ItemsSource = _todoDataList;
 
-            _todoDataList.ListChanged += _todoDataList_ListChanged;
+            _todoDataList.ListChanged += TodoDataList_ListChanged;
         }
 
-        private void _todoDataList_ListChanged(object sender, ListChangedEventArgs e)
+        private void TodoDataList_ListChanged(object sender, ListChangedEventArgs e)
         {
             if (e.ListChangedType == ListChangedType.ItemAdded || e.ListChangedType == ListChangedType.ItemChanged || e.ListChangedType == ListChangedType.ItemDeleted)
             {
